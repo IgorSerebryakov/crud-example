@@ -1,0 +1,14 @@
+<table>
+    <?php foreach ($schools as $school): ?>
+    <tr>
+        <td>
+            <?= htmlspecialchars($school['id']) ?>
+        </td>
+        <td>
+            <a href="/schools/<?= htmlspecialchars($school['id']) ?>"><?= htmlspecialchars($school['name']) ?></a>
+        </td>
+    </tr>
+    <?php endforeach; ?>
+</table>
+
+
